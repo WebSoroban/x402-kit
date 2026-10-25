@@ -1,0 +1,6 @@
+### Public health check
+GET http://localhost:8787/health
+
+### Unpaid request — should return HTTP 402 with x402 payment requirements
+GET http://localhost:8787/api/research-brief
+Accept: application/json
