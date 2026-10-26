@@ -67,13 +67,13 @@ npm install
 npm test
 npm run build
 ```
-
+ 
 ## Learn more
-
+ 
 - [x402 payments guide](https://websoroban.in/docs/payments)
 - [API reference](https://websoroban.in/docs/reference/api)
 - Recurring payments: [WebSoroban/payloop](https://github.com/WebSoroban/payloop)
 
 ## License
-
+ 
 MIT
