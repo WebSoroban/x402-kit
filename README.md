@@ -1,5 +1,5 @@
 # x402 kit
-
+ 
 Charge for any HTTP endpoint in USDC on Stellar, using the
 [x402](https://www.x402.org) protocol. A client calls your route, gets
 `402 Payment Required`, signs one USDC authorization in a Stellar wallet, and
@@ -7,7 +7,7 @@ retries. The payment settles on Stellar and your handler runs.
 
 Settlement goes through WebSoroban's managed facilitator (OpenZeppelin
 Channels), which also pays the network fee. Testnet and mainnet are both live.
-
+ 
 | Path | What it is |
 | --- | --- |
 | [`sdk/`](sdk) | [`@web-soroban/pay`](https://www.npmjs.com/package/@web-soroban/pay): Express middleware, preflight checks, webhook verification |
@@ -19,7 +19,7 @@ Channels), which also pays the network fee. Testnet and mainnet are both live.
    network, a price, and a payout address that holds a USDC trustline. Copy the
    endpoint id and the endpoint key, which is shown once.
 2. Protect a route:
-
+ 
 ```bash
 npm install @web-soroban/pay @x402/core @x402/express @x402/stellar express
 ```
