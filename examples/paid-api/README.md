@@ -4,7 +4,7 @@ A runnable Express + TypeScript endpoint protected by **$0.01 USDC on Stellar** 
 
 ## 1. Create the payment endpoint
 
-Open [WebSoroban Pay](https://websoroban.in/pay) and create a testnet endpoint:
+Open [WebSoroban Pay](https://pay.websoroban.in) and create a testnet endpoint:
 
 - Price: `0.01`
 - Payout address: a funded Stellar testnet G-address **with a USDC trustline** (the studio checks this for you)
@@ -42,7 +42,7 @@ The script signs one USDC authorization, the facilitator settles it, and you get
 
 ## 5. Go live on mainnet
 
-1. In [WebSoroban Pay](https://websoroban.in/pay), create a new endpoint with **Mainnet** selected. Its payout address must exist on mainnet and hold a trustline to Circle USDC (issuer `GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN`).
+1. In [WebSoroban Pay](https://pay.websoroban.in), create a new endpoint with **Mainnet** selected. Its payout address must exist on mainnet and hold a trustline to Circle USDC (issuer `GA5ZSEJYB37JRC5AVCIA5MOP4RHTM335X2KGX3IHOJAPP5RE34K4KZVN`).
 2. Replace `WEBSOROBAN_ENDPOINT_ID`, `WEBSOROBAN_PAY_KEY` (now `wsp_live_…`), and `STELLAR_PAY_TO`. Nothing else changes: the network comes from the key.
 3. Restart. The preflight checks the key and the mainnet trustline.
 4. Pay once from a mainnet wallet through the hosted checkout and check the receipt. `pnpm pay` stays testnet-only so a terminal secret never spends real USDC.

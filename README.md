@@ -15,7 +15,7 @@ Channels), which also pays the network fee. Testnet and mainnet are both live.
 
 ## Quick start
 
-1. In [WebSoroban Pay](https://websoroban.in/pay), create an endpoint. Pick the
+1. In [WebSoroban Pay](https://pay.websoroban.in), create an endpoint. Pick the
    network, a price, and a payout address that holds a USDC trustline. Copy the
    endpoint id and the endpoint key, which is shown once.
 2. Protect a route:
